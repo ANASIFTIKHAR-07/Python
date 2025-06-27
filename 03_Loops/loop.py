@@ -54,24 +54,68 @@ for num in numbers:
 
 #  No 6: Find the factorial of a numbers using while loop 
 
-number = int(input("Enter the number to find the factorial: "))
-factorial = 1
+# number = int(input("Enter the number to find the factorial: "))
+# factorial = 1
 
-while number > 0:
-    # factorial = factorial * number
-    factorial *= number
-    number -= 1
-print("The factorial of your number is : ", factorial)
+# while number > 0:
+#     # factorial = factorial * number
+#     factorial *= number
+#     number -= 1
+# print("The factorial of your number is : ", factorial)
 
 
 #  No 7: Keep asking the user for input until they enter the value between 1 and 10
 
 while True:
-    int(input("Enter the number between 1 and 10: "))
+    number= int(input("Enter the number between 1 and 10: "))
     if 1 <= number <= 10 :
         print("Thanks for entering the right number")
         break
     else:
         print("Invalid number try Again!!")
+
+#  No 8: Prime number checker
+
+
+prime_num = int(input("Enter your number: "))
+is_prime = True
+
+if prime_num > 1:
+    for i in range(2, prime_num):
+        if (prime_num % i) == 0:
+            is_prime = False
+            break
+
+print(is_prime)
+
+#  No 9: Check if all the elements in the list are unique. If a duplicate is found,exit the loop
+# and print the duplicate
+
+items = ["apple", "banana", "orange", "apple", "mango"]
+
+unique_item = set()
+
+for item in items:
+    if item in unique_item:
+        print("Duplicate item :", item)
+        break
+    unique_item.add(item)
+
+#  No 10: Exponential backoff strategy
+
+import time
+
+max_retries = 5
+wait_time = 1
+attempts = 0
+
+while attempts < max_retries:
+    print("Attempts", attempts + 1, "-wait time", wait_time)
+    time.sleep
+    wait_time += 2
+    attempts += 1
+
+
+
 
 
