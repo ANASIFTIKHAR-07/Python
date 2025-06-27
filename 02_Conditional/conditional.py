@@ -33,13 +33,57 @@
 #  2$ Discount on wednesday for everyone
 
 
-age = int(input("Enter your age: "))
 
-day = input("Enter the day")
 
-price = 12 if age >= 18 else 8
+# age = int(input("Enter your age: "))
 
-if day == "Wednesday" :
-    price -= 2
+# day = input("Enter the day: ").strip().lower()
 
-print("Ticket price for you is $", price)
+# price = 12 if age >= 18 else 8
+
+# if day == "wednesday" :
+#     price -= 2
+
+# print("Ticket price for you is $", price)
+
+#  No 3: Grade Calculator 
+
+#  A(90-100), B(80-89), C(70-79), D(60-69), F(Below 60)
+
+# nums = int(input("Enter your numbers: "))
+
+# if nums > 100 or nums < 0 :
+#     print("Please Enter valid numbers")
+#     # exit() => Can also use this method to exit from the program in some cases.
+# else:
+#     if nums >= 90 and nums <= 100:
+#         print("A Grade")
+#     elif nums >= 80 and nums <= 89:
+#         print("B Grade")
+#     elif nums >= 70 and nums <= 79:
+#         print("C Grade")
+#     elif nums >= 60 and nums <= 69:
+#         print("D Grade")
+#     else:
+#         print("F : You are fail")
+
+
+#  No 4: Determine if the banana is ripe, overripe or unripe based on it's color:
+#   Banana : Green = unripe, Yellow = ripe, Brown = overripe
+
+
+color = input("Enter the color of banana: ").strip().lower()
+
+if color == "yellow":
+    print("The Banana is ripe")
+elif color == "brown":
+    print("The Banana is overripe")
+elif color == "green":
+    print("The Banana is unripe")
+else:
+    print("I think you have entered a wrong color, Please Try Again!")
+
+
+
+
+    
