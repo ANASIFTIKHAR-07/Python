@@ -72,18 +72,66 @@
 #   Banana : Green = unripe, Yellow = ripe, Brown = overripe
 
 
-color = input("Enter the color of banana: ").strip().lower()
+# color = input("Enter the color of banana: ").strip().lower()
 
-if color == "yellow":
-    print("The Banana is ripe")
-elif color == "brown":
-    print("The Banana is overripe")
-elif color == "green":
-    print("The Banana is unripe")
+# if color == "yellow":
+#     print("The Banana is ripe")
+# elif color == "brown":
+#     print("The Banana is overripe")
+# elif color == "green":
+#     print("The Banana is unripe")
+# else:
+#     print("I think you have entered a wrong color, Please Try Again!")
+
+
+
+#  No 5: Weather Activity suggestion
+
+#  Sunny = Go for a walk or Play sports, Rainy = Spend quality or productive time at home, Snowy = Buld a snowman
+
+# weather = input("How's the weather today: ").strip().lower()
+
+# if weather == "sunny":
+#     print("Go for a walk or play sports")
+# elif weather == "rainy" or weather == "raining":
+#     print("Spend some quality or productive time at home")
+# elif weather == "snowy" or weather == "snowfall":
+#     print("Build a snowman")
+
+
+
+
+#  No 6: Transport suggestion
+
+
+# distance = int(input("Enter the distance: "))
+
+# if distance <= 3:
+#     transport = "walk"
+# elif distance > 3 and distance <= 15:
+#     transport = "bike"
+# else :
+#     transport = "car or bus"
+
+# print("AI recommend you the transport of:", transport)
+
+
+#  Pet food recommendation based on specie and age of the pet.
+
+pet = input("Which pet do you have: ").strip().lower()
+pet_age = float(input("What is the age of you pet: "))
+
+if pet == "dog":
+    if pet_age < 2:
+        print("Give your dog Farmina N&D Puppy Starter")
+    elif pet_age >= 2:
+        print("Give your dog Pedigree Adult Dog Dry Food")
+elif pet == "cat":
+    if pet_age < 2:
+        print("Give your cat Tiki cat food or Nature's variety food, To fulfil it's nutrition")
+    elif pet_age >=2:
+        print("Give your cat Himalya Healthy CAT food adult")
 else:
-    print("I think you have entered a wrong color, Please Try Again!")
+    print("I don't have data for your pet specie")
 
 
-
-
-    
