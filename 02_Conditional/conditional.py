@@ -116,7 +116,7 @@
 # print("AI recommend you the transport of:", transport)
 
 
-#  Pet food recommendation based on specie and age of the pet.
+#  No 7: Pet food recommendation based on specie and age of the pet.
 
 pet = input("Which pet do you have: ").strip().lower()
 pet_age = float(input("What is the age of you pet: "))
@@ -134,4 +134,16 @@ elif pet == "cat":
 else:
     print("I don't have data for your pet specie")
 
+
+
+#  No 8L Leap year finder
+
+
+year = int(input("Enter the year: "))
+
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "Is a leap year")
+else:
+    print(year, "Is not a leap year")
 
