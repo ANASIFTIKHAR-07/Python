@@ -118,21 +118,21 @@
 
 #  No 7: Pet food recommendation based on specie and age of the pet.
 
-pet = input("Which pet do you have: ").strip().lower()
-pet_age = float(input("What is the age of you pet: "))
+# pet = input("Which pet do you have: ").strip().lower()
+# pet_age = float(input("What is the age of you pet: "))
 
-if pet == "dog":
-    if pet_age < 2:
-        print("Give your dog Farmina N&D Puppy Starter")
-    elif pet_age >= 2:
-        print("Give your dog Pedigree Adult Dog Dry Food")
-elif pet == "cat":
-    if pet_age < 2:
-        print("Give your cat Tiki cat food or Nature's variety food, To fulfil it's nutrition")
-    elif pet_age >=2:
-        print("Give your cat Himalya Healthy CAT food adult")
-else:
-    print("I don't have data for your pet specie")
+# if pet == "dog":
+#     if pet_age < 2:
+#         print("Give your dog Farmina N&D Puppy Starter")
+#     elif pet_age >= 2:
+#         print("Give your dog Pedigree Adult Dog Dry Food")
+# elif pet == "cat":
+#     if pet_age < 2:
+#         print("Give your cat Tiki cat food or Nature's variety food, To fulfil it's nutrition")
+#     elif pet_age >=2:
+#         print("Give your cat Himalya Healthy CAT food adult")
+# else:
+#     print("I don't have data for your pet specie")
 
 
 
