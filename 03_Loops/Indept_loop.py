@@ -108,7 +108,7 @@ Dictionaries are also iterable. You can loop over keys, values, or items:
 - You can create your own iterator by defining `__iter__()` and `__next__()` in a class.
 - Iter object is by default in file, but not by default in list, dict etc [have to manually make a variable with iter].
 - So, from this short difference we can conclude that, when we store a file in a variable, it becomes a iterable object by 
-- it's own. But when we store the list in a variable, that is not it's iterable object. It's just it's memory reference.
+- it's own. But when we store the list in a variable, that is not it's iterable object. It's just it's actual object reference.
 
 ============================
 Summary
@@ -168,14 +168,14 @@ i = iter(list)  # This iter() method or tool is applied on the iterable objects.
 
 #  If we check you will know that:
 
-f.__iter__() is f # They both will return True
-iter(f) is f 
+# f.__iter__() is f # They both will return True
+# iter(f) is f 
 
 #  BUT WHAT WILL HAPPEN IN THE CASE OF LIST. LET'S SEE:
 
 newlist = [2,3,4,5,6]
 
-iter(newlist) is newlist # This will return false
+# iter(newlist) is newlist # This will return false
 
 #  Why that happens: It's because when we store the file in a variable it becomes a iterable object. But when we store a
 #  list in a variable or have given the name of it in memory reference,it is not its iterable object, that's just the 
