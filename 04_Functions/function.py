@@ -3,9 +3,6 @@
 
 # 01 Basic function syntax: Find square of a num
 
-from audioop import mul
-from re import I
-
 
 def square_num(number) :
     return number ** 2
