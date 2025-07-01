@@ -145,3 +145,47 @@ Example:
 End of Guide
 ============================
 """
+
+
+
+
+
+
+
+
+def make_multiplier(n):
+    def multiplier(x):
+        return x * n
+    return multiplier
+
+time3 = make_multiplier(3)
+print(time3(10)) 
+
+
+def  f1():
+    x = 88
+    def f2():
+        print(x)
+    return f2
+
+result =  f1()
+# result()
+
+def func1() :
+    x = 34
+    def func2():
+        print(x)
+    return func2
+result1 = func1()
+# result1()
+
+def chaicode(num):
+    def actual(x):
+        return x ** num
+    return actual
+
+f = chaicode(3)
+g = chaicode(2)
+
+print(f(3))
+print(g(2))
